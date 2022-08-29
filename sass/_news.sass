@@ -1,0 +1,136 @@
+.news
+    a
+        text-decoration: none
+        display: block
+        width: 270px
+        margin: 0 auto
+    margin-top: 80px
+    margin-bottom: 100px
+    background: url(../img/news/bg.png) center no-repeat
+    background-size: 100% 73%
+    &::before
+        content: ''
+        position: absolute
+        background: url(../img/news/bg-2.jpg) left no-repeat
+        background-size: cover
+        width: 75%
+        height: 1268.64px
+        left: 0
+        z-index: -1
+        top: 2850px
+    &-title
+        font-family: Gotham Pro
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 46px
+        color: #FFFFFF
+        margin-top: 20px
+    &-block
+        &__text
+            font-family: Gotham Pro
+            font-style: normal
+            font-weight: normal
+            font-size: 20px
+            line-height: 19px
+            color: #FFFFFF
+            margin-top: 30px
+            margin-left: 20px
+            &:nth-child(5)
+                
+        &__btn
+            display: block
+            margin: 0 auto
+            margin-top: 40px
+        &__1, &__2, &__3, &__4
+            img
+                width: 100%
+        &__1
+            margin-top: 30px
+        &__2
+            margin-top: 80px
+        &__3
+            p
+                color: #FFFFFF
+        &__4
+            margin-top: 50px
+            p
+                color: #FFF
+        &__5, &__6
+            p
+                color: #282728
+        &__5
+            margin-top: 30px
+        &__6
+            margin-top: 80px
+    
+
+.quest
+    padding: 74px 0
+    background: #FFFFFF
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)
+    border-radius: 10px
+    position: relative
+    z-index: 1
+    &::before
+        content: ''
+        width: 98%
+        height: 98%
+        right: 50%
+        margin-right: -49%
+        top: 1%
+        border: 1px solid rgba(40, 39, 40, 0.1)
+        border-radius: 10px
+        position: absolute
+        z-index: -1
+    &-title
+        font-family: Gotham Pro
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 34px
+        color: #282728
+        text-align: center
+        position: relative
+        &::before
+            content: ''
+            width: 221px
+            height: 1px
+            position: absolute
+            background: linear-gradient(315deg, #B2DD4C 0.01%, #BFF839 100%)
+            bottom: -10px
+            right: 50%
+            margin-right: -110.5px
+    &-subtitle
+        margin-top: 20px
+        p
+            font-family: Gotham Pro
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 18px
+            text-align: center
+            color: #282728
+    &-input
+        border: none
+        outline: none
+        border-bottom: 1px solid #B2DD4C
+        margin-top: 20px
+        width: 100%
+        padding-bottom: 5px
+        &__title
+            font-family: Gotham Pro
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 17px
+            color: #282728
+        &__name
+            margin-top: 30px
+        &__phone
+            margin-top: 30px
+    &-btn
+        margin-top: 30px
+    &-wrap
+        display: flex
+        justify-content: center

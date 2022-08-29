@@ -1,0 +1,48 @@
+.clients
+    margin-top: 80px
+    position: relative
+    &-title
+        font-family: Gotham Pro
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 46px
+        color: #282728
+        margin-bottom: 30px
+    &-sliders
+        position: relative
+        &__block
+            min-height: 140px
+            display: flex !important
+            justify-content: center
+            align-items: center
+            img
+                display: block
+                margin: auto
+        &__prev
+            cursor: pointer
+            position: absolute
+            bottom: 50%
+            margin-bottom: -28px
+            left: -90px
+            &:hover
+                svg
+                    path
+                        fill: #C4E96C
+            svg
+                path
+                    transition: all 0.4s
+        &__next
+            cursor: pointer
+            position: absolute
+            bottom: 50%
+            margin-bottom: -28px
+            right: -90px
+            transform: rotate(180deg)
+            &:hover
+                svg
+                    path
+                        fill: #C4E96C
+            svg
+                path
+                    transition: all 0.4s

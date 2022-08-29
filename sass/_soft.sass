@@ -1,0 +1,91 @@
+.soft
+    position: relative
+    margin-top: 100px
+    &-title
+        font-family: Gotham Pro
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        color: #282728
+    &-subtitle
+        font-family: Gotham Pro
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 23px
+        color: #282728
+        margin-top: 30px
+    &-composition
+        font-family: Gotham Pro
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 17px
+        color: #282728
+        margin-top: 20px
+    &-sliders
+        &__blocks
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-top: 50px
+            padding-left: 78px
+            padding-right: 98px
+        &__prev
+            cursor: pointer
+            position: absolute
+            bottom: 50%
+            margin-bottom: -28px
+            left: -128px
+            &:hover
+                svg
+                    path
+                        fill: #C4E96C
+            svg
+                path
+                    transition: all 0.4s
+        &__next
+            cursor: pointer
+            position: absolute
+            bottom: 50%
+            margin-bottom: -28px
+            right: -128px
+            &:hover
+                svg
+                    path
+                        fill: #C4E96C
+            svg
+                transform: rotate(180deg)
+                path
+                    transition: all 0.4s
+    &-blocks
+        margin-right: 20px
+        &__block
+            margin-bottom: 30px
+            &-title
+                font-family: Gotham Pro
+                font-style: normal
+                font-weight: bold
+                font-size: 20px
+                line-height: 19px
+                color: #282728
+                position: relative
+                &::before
+                    content: ''
+                    width: 10px
+                    height: 10px
+                    background: linear-gradient(315deg, #B2DD4C 0.01%, #BFF839 100%)
+                    position: absolute
+                    border-radius: 50%
+                    bottom: 50%
+                    margin-bottom: -5px
+                    left: -22px
+            &-text
+                font-family: Gotham Pro
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 13px
+                color: #282728
+                margin-top: 19px

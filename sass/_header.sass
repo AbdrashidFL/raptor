@@ -1,0 +1,132 @@
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-nav
+        display: flex
+        justify-content: cetner
+        align-items: center
+        &__link
+            font-family: Gotham Pro
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 15px
+            color: #FFFFFF
+            margin-right: 25px
+            position: relative
+            padding-bottom: 2px
+            border-bottom: 2px dotted #FFFFFF
+            display: block
+            transition: 0.4s
+            &:hover
+                color: #B2DD4C
+                text-decoration: none
+                border-bottom: 2px dotted #B2DD4C
+        &__goods
+            position: relative
+            transition: 0.4s
+            &:hover .header-nav__goods-links
+                opacity: 1
+                z-index: 1
+                display: block
+            &:hover
+                a
+                    svg
+                        transform: rotate(-180deg)
+                        transition: 0.6s
+            &-link
+                position: relative
+                svg
+                    transition: 0.4s
+                &::before
+                    content: ''
+                    width: 100%
+                    height: 100%
+                    cursor: pointer
+                    padding-bottom: 60px
+                    position: absolute
+                    z-index: 1
+                &:hover
+                    svg
+                        path
+                            stroke: #B2DD4C
+            &-links
+                opacity: 0
+                background: #FFFFFF
+                position: absolute
+                z-index: -10
+                transition: all 0.4s
+                left: 0
+                margin-top: 30px
+                display: none
+                &:hover .header-nav__goods-link
+                    color: #B2DD4C
+                    text-decoration: none
+                    border-bottom: 2px dotted #B2DD4C
+                a
+                    display: block
+                    font-family: Gotham Pro
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 18px
+                    line-height: 23px
+                    color: #282728
+                    border-bottom: 1px solid #ececec
+                    padding: 15px 15px 15px 15px
+                    width: 325px
+        &__contacts
+            margin-right: 0
+    &-contacts
+        &__num
+            font-family: Gotham Pro
+            font-style: normal
+            font-weight: normal
+            font-size: 24px
+            line-height: 23px
+            color: #FFFFFF
+            text-align: right
+            display: block
+            transition: 0.4s
+            &:hover
+                text-decoration: none
+                color: #B2DD4C
+        &__call
+            font-family: Gotham Pro
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 13px
+            color: #FFFFFF
+            text-align: right
+            margin-top: 10px
+            padding-bottom: 2px
+            display: block
+            cursor: pointer
+            position: relative
+            transition: 0.4s
+            &::before
+                content: ''
+                border-bottom: 2px dotted
+                width: 126px
+                height: 2px
+                position: absolute
+                bottom: -2px
+            &:hover
+                color: #B2DD4C
+                text-decoration: none
+                &::before
+                    border-bottom: 2px dotted #B2DD4C
+    &-wrap
+        background: #282728
+        padding: 30px 0
+        position: absolute
+        width: 100%
+        top: 0
+.fixed
+    position: fixed
+    width: 100%
+    z-index: 2
+    top: 0
+
+        

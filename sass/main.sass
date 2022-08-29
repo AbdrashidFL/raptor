@@ -1,0 +1,59 @@
+body
+    box-sizing: border-box
+*
+    margin: 0
+    padding: 0
+p
+    margin: 0
+    padding: 0
+.btn
+    background: linear-gradient(315deg, #B2DD4C 0.01%, #BFF839 100%)
+    // background: #BFF839
+    border-radius: 10px
+    width: 260px
+    height: 70px
+    position: relative
+    border: none
+    font-family: Gotham Pro
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 17px
+    text-align: center
+    color: #282728
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 1
+    &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background: #fff
+        opacity: 0
+        left: 0
+        top: 0
+        border-radius: 7px
+        transition: 0.4s
+        z-index: -1
+    &:hover
+        &::after
+            color: #282728
+            opacity: 0.2
+
+
+@import 'header'
+@import 'basic'
+@import 'soft'
+@import 'goods'
+@import 'clients'
+@import 'certif'
+@import 'news'
+@import 'footer'
+@import 'popup'
+@import 'product'
+@import 'catalog'
+.hidden-pc
+    display: none
+@import 'media'
